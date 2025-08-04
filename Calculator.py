@@ -53,8 +53,8 @@ print("\n----------This is a Simple Expression Calculator----------")
 print("Enter a mathematical expression consisting of integers and symbols( +, -, *, /). If you wish to Quit, then enter q. ")
 
 while(1):
-    s = input("Enter the expression: ")
-    s.lower()
+    s = input("\nEnter the expression: ")
+    s = s.lower()
     s = s.replace(" ","")
 
     if s == 'q':
@@ -64,5 +64,6 @@ while(1):
     if validstr(s):
         print("Please enter valid string containing only intergers and '+', '-', '*', '/' or 'q'.")
 
-    print(f"The solution to the given expression is: {makelist(s)}\n")
+    print(f"The solution to the given expression is: {makelist(s)}")
+
 
