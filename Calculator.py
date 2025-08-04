@@ -55,6 +55,7 @@ print("Enter a mathematical expression consisting of integers and symbols( +, -,
 while(1):
     s = input("Enter the expression: ")
     s.lower()
+    s = s.replace(" ","")
 
     if s == 'q':
         print("----------Good Bye!----------\n")
@@ -64,3 +65,4 @@ while(1):
         print("Please enter valid string containing only intergers and '+', '-', '*', '/' or 'q'.")
 
     print(f"The solution to the given expression is: {makelist(s)}\n")
+
