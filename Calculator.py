@@ -64,4 +64,3 @@ while(1):
         print("Please enter valid string containing only intergers and '+', '-', '*', '/' or 'q'.")
 
     print(f"The solution to the given expression is: {makelist(s)}\n")
-
